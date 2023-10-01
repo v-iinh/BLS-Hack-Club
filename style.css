@@ -6,8 +6,8 @@ body {
     display: none;
 }
 
-.w3-top .w3-bar {
-    background-color: red;
+.custom-navbar {
+    background-color: #EC3750;
 }
 
 
