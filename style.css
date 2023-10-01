@@ -5,3 +5,9 @@ body {
 .mySlides {
     display: none;
 }
+
+.w3-top .w3-bar {
+    background-color: red;
+}
+
+
