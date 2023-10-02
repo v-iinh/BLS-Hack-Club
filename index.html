@@ -1,31 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-  <title>BLS HACK</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>BLS Hack</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <div class="w3-top">
-    <div class="w3-bar w3-hover-red w3-card">
-      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <a href="#" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-      <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hide-small">ABOUT</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
-      <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hide-small">PROJECTS</a>
-      </div>
-      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
-    </div>
-  </div>
-
-  <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-  </footer>
-  <script src="script.js"></script>
+    <section class="banner">
+        <div class="container">
+            <div id="scene">
+                <h2 id="text">
+                    <span data-depth-y="1">B</span>
+                    <span data-depth-y="-1">L</span>
+                    <span data-depth-y="1">S</span>
+                    <span data-depth-y="-1">&nbsp;</span>
+                    <span data-depth-y="-1">H</span>
+                    <span data-depth-y="1">a</span>
+                    <span data-depth-y="-1">c</span>
+                    <span data-depth-y="1">k</span>
+                </h2>
+                <div class ="layer" data-depth="-0.5"><img src="images/img1.png"></div>
+                <div class ="layer zIndexAbove" data-depth="0.75"><img src="images/img2.png"></div>
+                <div class ="layer" data-depth="1"><img src="images/img3.png"></div>
+                <div class ="layer" data-depth="-0.25"><img src="images/img4.png"></div>
+                <div class ="layer zIndexAbove" data-depth="0.625"><img src="images/img5.png"></div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        var text = document.getElementById('text');
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(text);
+        var parallaxInstance = new Parallax(scene);
+    </script>
 </body>
-
 </html>
