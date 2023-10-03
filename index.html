@@ -8,6 +8,7 @@
 <body>
     <section class="banner">
         <div class="container">
+            <div id="particles-js"></div>
             <div id="scene">
                 <h2 id="text">
                     <span data-depth-y="1">B</span>
@@ -19,11 +20,6 @@
                     <span data-depth-y="-1">c</span>
                     <span data-depth-y="1">k</span>
                 </h2>
-                <div class ="layer" data-depth="-0.5"><img src="images/img1.png"></div>
-                <div class ="layer zIndexAbove" data-depth="0.75"><img src="images/img2.png"></div>
-                <div class ="layer" data-depth="1"><img src="images/img3.png"></div>
-                <div class ="layer" data-depth="-0.25"><img src="images/img4.png"></div>
-                <div class ="layer zIndexAbove" data-depth="0.625"><img src="images/img5.png"></div>
             </div>
         </div>
     </section>
@@ -34,5 +30,8 @@
         var parallaxInstance = new Parallax(text);
         var parallaxInstance = new Parallax(scene);
     </script>
+    <script src="particles.js"></script>
+    <script type="text/javascript" src="particles.js"></script>
+    <script type="text/javascript" src="app.js"></script>
 </body>
 </html>
