@@ -74,3 +74,47 @@ body
     height: 100%;
     background: #252429;
 }
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 0 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    transition: color 0.3s; 
+}
+
+.navbar a:hover {
+    color: #ec3750;
+}
+
+.logo {
+    position: absolute;
+    top: 0px; 
+    left: 0px;
+    width: 150px; 
+    height: 75px; 
+}
