@@ -43,7 +43,7 @@
     position: absolute;
     display: flex !important;
     position: relative;
-    color: #ec3750;
+    color: #a633d6;
     font-size: 14vh;
     z-index: 100;
 }
@@ -86,6 +86,7 @@ body
     align-items: center;
     justify-content: right;
     padding: 0 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar ul {
