@@ -193,3 +193,13 @@ p {
   .active:after {
     content: "\2796";
   }
+
+  .logo:hover {
+    animation: wave-flag 0.5s linear infinite alternate;
+    cursor: pointer;
+}
+
+@keyframes wave-flag {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-5deg); }
+}
