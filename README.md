@@ -1,1 +1,5 @@
 # BLS-Hack-Club
+Source code for BLS Hack Club's website at https://bls.hackclub.com/
+
+More on BLS Hack Club:
+BLS Hack, associated with the international Hack Club organization, is open to all students in BLS, aiming to create a diverse coding community by providing educational resources for learning to code and a platform for the global Hack Club association. We provide these resources for free thanks to the support of donors such as Tom Preston-Werner (founder of GitHub) and Elon Musk. BLS Hack offers a variety of opportunities ranging from hosting extraordinary hackathons (with a $500 Hack Club grant) that involve communities coming together to spend hours with like-minded individuals to create coding projects and grow to countless impressive digital projects and involving members in STEM and Technology internships that can help them stand out.
