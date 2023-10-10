@@ -128,7 +128,7 @@ body
 
 .logo {
     position: absolute;
-    top: 0px; 
+    top: -6px; 
     left: 0px;
     width: 150px; 
     height: 75px; 
@@ -167,4 +167,14 @@ button:focus,
 button:hover {
   box-shadow: var(--shadow-elevated);
   transform: scale(1.025);
+}
+
+.logo:hover {
+    animation: wave-flag 0.5s linear infinite alternate;
+    cursor: pointer;
+}
+
+@keyframes wave-flag {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-5deg); }
 }
