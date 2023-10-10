@@ -46,7 +46,7 @@
     position: relative;
     color: #a633d6;
     font-size: 14vh;
-    z-index: 100;
+    z-index: 1;
 }
 .container #scene #text span
 {
@@ -82,7 +82,7 @@ body
     left: 0;
     width: 100%;
     height: 100px;
-    z-index: 1000;
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: right;
@@ -126,12 +126,12 @@ body
 }
 
 .logo {
-    position: absolute;
+    position: fixed;
     top: 0px; 
     left: 0px;
     width: 150px; 
     height: 75px; 
-    z-index: 1001;
+    z-index: 3;
 }
 
 body {
@@ -204,3 +204,13 @@ p {
   .active:after {
     content: "\2796";
   }
+
+  .logo:hover {
+    animation: wave-flag 0.5s linear infinite alternate;
+    cursor: pointer;
+}
+
+@keyframes wave-flag {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-5deg); }
+}
