@@ -43,7 +43,7 @@
     </section> <br>
     
     <section>
-        <form method="post" action="https://script.google.com/macros/s/AKfycbwhdzwIn1fGJpU2m_LV7rEIrNBoQvzqwsuyVBV2WeLSn6IaO9XL3mwnlcRrH7hozGGKXA/exec">
+        <form method="post" action="https://script.google.com/macros/s/AKfycbyzpBcArx4G03pfAT6vlsWuIipM3TpBCMTIaUbSi4QScEfxTVT8EqTB1pD2etmwjw3YzA/exec">
           <div class="card sunken" style="background: #2b2a2f;" data-dashlane-rid="90fa186659f851f5" data-form-type="other">
             <div style="
                 display: grid;
@@ -67,7 +67,14 @@
                 <input style="background: #252429; color: white;" placeholder="I have a little bit of experience in..." data-dashlane-rid="41d3769a3d107ce9" data-kwimpalastatus="alive" data-kwimpalaid="1696902461334-0" data-form-type="experience" name="Experience" type="text">
               </label>
             </div>
-            <button style="margin-top: var(--spacing-3); width: 100%; background: #a633d6; color: white;" data-dashlane-rid="64b68ed8b998baec" data-dashlane-label="true" data-form-type="other">
+            <script>
+              function redirect() {
+                window.location.replace("index.html");
+                alert("Form submitted! Thanks for your interest!!!");
+                return false;
+              }
+            </script>
+            <button style="margin-top: var(--spacing-3); width: 100%; background: #a633d6; color: white;" data-dashlane-rid="64b68ed8b998baec" data-dashlane-label="true" data-form-type="other" onclick="return redirect()">
               Submit
             </button>
           </div>
