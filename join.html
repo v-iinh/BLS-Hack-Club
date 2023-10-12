@@ -43,7 +43,8 @@
     </section> <br>
     
     <section>
-        <div class="card sunken" style="background: #2b2a2f;" data-dashlane-rid="90fa186659f851f5" data-form-type="other">
+        <form method="post" action="https://script.google.com/macros/s/AKfycbyzpBcArx4G03pfAT6vlsWuIipM3TpBCMTIaUbSi4QScEfxTVT8EqTB1pD2etmwjw3YzA/exec">
+          <div class="card sunken" style="background: #2b2a2f;" data-dashlane-rid="90fa186659f851f5" data-form-type="other">
             <div style="
                 display: grid;
                 grid-template-columns: 1fr 1fr;
@@ -51,39 +52,34 @@
               ">
               <label data-dashlane-label="true" style="color: white;">
                 Full Name
-                <input style="background: #252429; color: white;" placeholder="John Doe" data-dashlane-rid="41d3769a3d107ce9" data-kwimpalastatus="alive" data-kwimpalaid="1696902461334-0" data-form-type="name">
+                <input style="background: #252429; color: white;" placeholder="John Doe" data-dashlane-rid="41d3769a3d107ce9" data-kwimpalastatus="alive" data-kwimpalaid="1696902461334-0" data-form-type="name" name="Name" type="text">
               </label>
               <label data-dashlane-label="true" style="color: white;">
                 Year of Graduation
-                <select style="background: #252429; color: white;" data-dashlane-rid="e37063a52b633510" data-form-type="other">
-                  <option value="" disabled selected>Select one…</option>
-                  <option value="2025">2025</option>
-                  <option value="2026">2026</option>
-                  <option value="2027">2027</option>
-                  <option value="2028">2028</option>
-                  <option value="2029">2029</option>
-                </select>
+                <input style="background: #252429; color: white;" placeholder="2025" data-dashlane-rid="41d3769a3d107ce9" data-kwimpalastatus="alive" data-kwimpalaid="1696902461334-0" data-form-type="yog" name="YOG" type="number">
               </label>
               <label data-dashlane-label="true" style="color: white;">
                 Email
-                <input style="background: #252429; color: white;" placeholder="sample@email.com" data-dashlane-rid="41d3769a3d107ce9" data-kwimpalastatus="alive" data-kwimpalaid="1696902461334-0" data-form-type="email">
+                <input style="background: #252429; color: white;" placeholder="sample@email.com" data-dashlane-rid="41d3769a3d107ce9" data-kwimpalastatus="alive" data-kwimpalaid="1696902461334-0" data-form-type="email" name="Email" type="text">
               </label>
               <label data-dashlane-label="true" style="color: white;">
                 Experience with Coding
-                <select style="background: #252429; color: white;" data-dashlane-rid="e37063a52b633510" data-form-type="other">
-                  <option value="" disabled selected>Select one…</option>
-                  <option value="None">None</option>
-                  <option value="Beginner">Beginner</option>
-                  <option value="Intermediate">Intermediate</option>
-                  <option value="Expert">Expert</option>
-                </select>
+                <input style="background: #252429; color: white;" placeholder="I have a little bit of experience in..." data-dashlane-rid="41d3769a3d107ce9" data-kwimpalastatus="alive" data-kwimpalaid="1696902461334-0" data-form-type="experience" name="Experience" type="text">
               </label>
             </div>
-            <button style="margin-top: var(--spacing-3); width: 100%; background: #a633d6; color: white;" data-dashlane-rid="64b68ed8b998baec" data-dashlane-label="true" data-form-type="other">
+            <script>
+              function redirect() {
+                window.location.replace("index.html");
+                alert("Form submitted! Thanks for your interest!!!");
+                return false;
+              }
+            </script>
+            <button style="margin-top: var(--spacing-3); width: 100%; background: #a633d6; color: white;" data-dashlane-rid="64b68ed8b998baec" data-dashlane-label="true" data-form-type="other" onclick="return redirect()">
               Submit
             </button>
           </div>
+        </form>
     </section>
-
+    <br><br><br>
 </body>
 </html>
