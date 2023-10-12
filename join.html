@@ -43,7 +43,7 @@
     </section> <br>
     
     <section>
-        <form method="post" action="https://script.google.com/macros/s/AKfycbyzpBcArx4G03pfAT6vlsWuIipM3TpBCMTIaUbSi4QScEfxTVT8EqTB1pD2etmwjw3YzA/exec">
+        <form method="post" action="https://script.google.com/macros/s/AKfycbwOGhaJb_87HVCE22gf0coLr6Yus1nGBxhQ2-TNDS3FDuv9H6-OFJ1uqxXfOLmHfOqLxg/exec">
           <div class="card sunken" style="background: #2b2a2f;" data-dashlane-rid="90fa186659f851f5" data-form-type="other">
             <div style="
                 display: grid;
@@ -56,7 +56,7 @@
               </label>
               <label data-dashlane-label="true" style="color: white;">
                 Year of Graduation
-                <input style="background: #252429; color: white;" placeholder="2025" data-dashlane-rid="41d3769a3d107ce9" data-kwimpalastatus="alive" data-kwimpalaid="1696902461334-0" data-form-type="yog" name="YOG" type="number">
+                <input style="background: #252429; color: white;" placeholder="2025" data-dashlane-rid="41d3769a3d107ce9" data-kwimpalastatus="alive" data-kwimpalaid="1696902461334-0" data-form-type="number" name="YOG" type="number">
               </label>
               <label data-dashlane-label="true" style="color: white;">
                 Email
@@ -69,12 +69,11 @@
             </div>
             <script>
               function redirect() {
-                window.location.replace("index.html");
-                alert("Form submitted! Thanks for your interest!!!");
-                return false;
+                window.location = ("index.html");
+                return true;
               }
             </script>
-            <button style="margin-top: var(--spacing-3); width: 100%; background: #a633d6; color: white;" data-dashlane-rid="64b68ed8b998baec" data-dashlane-label="true" data-form-type="other" onclick="return redirect()">
+            <button style="margin-top: var(--spacing-3); width: 100%; background: #a633d6; color: white;" data-dashlane-rid="64b68ed8b998baec" data-dashlane-label="true" data-form-type="other" onclick="redirect()">
               Submit
             </button>
           </div>
