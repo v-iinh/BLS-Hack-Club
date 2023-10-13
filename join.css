@@ -126,7 +126,7 @@ body
 }
 
 .logo {
-    position: absolute;
+    position: fixed;
     top: -6px; 
     left: 0px;
     width: 150px; 
