@@ -44,9 +44,10 @@
     display: flex !important;
     position: relative;
     color: #a633d6;
-    font-size: 14vh;
+    font-size: 15vh;
     z-index: 100;
 }
+
 .container #scene #text span
 {
     position: relative !important;
@@ -124,7 +125,7 @@ body
 }
 
 .logo {
-    position: absolute;
+    position: fixed;
     top: -6px; 
     left: 0px;
     width: 150px; 
@@ -182,8 +183,32 @@ footer {
     color: #ec3750;
 }
 
-.footer-section ul li a[target="_blank"]::after {
-    content: " (external)";
-    font-size: 12px;
-    margin-left: 5px;
+@media (max-width: 1000px) {
+    .container #scene #text {
+        font-size: 12vh;
+    }
+}
+
+@media (max-width: 800px) {
+    .container #scene #text {
+        font-size: 8vh;
+    }
+    .navbar li {
+        display: none;
+    }
+    .footer-section h3 {
+        font-size: 15px;
+    }
+    .footer-section ul li a {
+        font-size: 13px;
+    }
+    .footer-container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    .container #scene #text {
+        font-size: 5vh;
+    }
 }
