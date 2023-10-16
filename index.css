@@ -202,6 +202,9 @@ footer {
     .footer-section ul li a {
         font-size: 13px;
     }
+    .footer-container {
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 500px) {
