@@ -441,6 +441,15 @@ footer {
         margin-right: 50px;
         margin-top: 175px; 
     }
+    .logo {
+        width: 100px !important; 
+    }
+    .accordion {
+        font-size: 1.5em !important;
+    }
+    .panel p {
+        font-size: 14px !important;
+    }
 }
 
 @media (max-width: 550px) {
