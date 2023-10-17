@@ -445,10 +445,10 @@ footer {
         width: 100px !important; 
     }
     .accordion {
-        font-size: 1.5em;
+        font-size: 1.5em !important;
     }
     .panel p {
-        font-size: 14px;
+        font-size: 14px !important;
     }
 }
 
