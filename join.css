@@ -262,4 +262,7 @@ footer {
         line-height: var(--line-height-subheading);
         font-size: var(--font-2);
     }
+    .logo {
+        width: 100px !important; 
+    }
 }
