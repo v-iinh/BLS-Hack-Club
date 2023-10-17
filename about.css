@@ -408,7 +408,7 @@ footer {
     color: #ec3750;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1350px) {
     .mobile-card {
         grid-template-columns: 1fr !important;
     }
