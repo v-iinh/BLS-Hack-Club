@@ -6,6 +6,13 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+html::-webkit-scrollbar {
+    display: none;
+}
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 .banner
 {
     position: relative;
@@ -196,15 +203,12 @@ footer {
     .navbar li {
         display: none;
     }
-    .footer-section h3 {
+    /* .footer-section h3 {
         font-size: 15px;
     }
     .footer-section ul li a {
         font-size: 13px;
-    }
-    .footer-container {
-        flex-direction: column;
-    }
+    } */
 }
 
 @media (max-width: 500px) {

@@ -6,6 +6,13 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+html::-webkit-scrollbar {
+    display: none;
+}
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 .banner
 {
     position: relative;
@@ -217,4 +224,42 @@ footer {
 
 .footer-section ul li a:hover {
     color: #ec3750;
+}
+
+@media (max-width: 1250px) {
+    .mobile-card {
+        grid-template-columns: 1fr !important;
+    }
+    .card {
+        padding: var(--spacing-3) !important;
+    }
+    label {
+        line-height: var(--line-height-caption);
+        font-size: var(--font-3);
+    }
+}
+
+@media (max-width: 800px) {
+    section p {
+        font-size: 2vh !important;
+        text-align: left !important;
+    }
+    .navbar li {
+        display: none !important;
+    }
+    main {
+        margin-left: 50px !important;
+        margin-right: 50px !important;
+        margin-top: 175px !important; 
+    }
+    .mobile-card {
+        grid-template-columns: 1fr !important;
+    }
+    .card {
+        padding: var(--spacing-3) !important;
+    }
+    label {
+        line-height: var(--line-height-subheading);
+        font-size: var(--font-2);
+    }
 }
