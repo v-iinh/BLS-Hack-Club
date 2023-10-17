@@ -203,16 +203,7 @@ footer {
     .navbar li {
         display: none;
     }
-    /* .footer-section h3 {
-        font-size: 15px;
-    }
-    .footer-section ul li a {
-        font-size: 13px;
-    } */
-}
-
-@media (max-width: 500px) {
-    .container #scene #text {
-        font-size: 5vh;
+    .logo {
+        width: 120px !important; 
     }
 }
