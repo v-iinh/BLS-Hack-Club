@@ -454,7 +454,7 @@ footer {
 
 @media (max-width: 550px) {
     section img {
-        height: 300px !important;
-        width: 350px !important;
+        height: 275px !important;
+        width: 325px !important;
     }
 }
