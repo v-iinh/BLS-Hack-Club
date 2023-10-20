@@ -415,8 +415,8 @@ footer {
     .card img {
         margin: 0 auto !important;
         display: block !important;
-        height: 250px !important;
-        width: 250px !important;
+        height: 200px !important;
+        width: 200px !important;
         border-radius: 50% !important;
     }
     section img {
@@ -437,8 +437,8 @@ footer {
         display: none;
     }
     main {
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-left: 25px;
+        margin-right: 25px;
         margin-top: 175px; 
     }
     .logo {
