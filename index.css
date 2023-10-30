@@ -190,6 +190,10 @@ footer {
     color: #ec3750;
 }
 
+#bars {
+    display: none;
+}
+
 @media (max-width: 1000px) {
     .container #scene #text {
         font-size: 12vh;
@@ -200,8 +204,12 @@ footer {
     .container #scene #text {
         font-size: 8vh;
     }
-    .navbar li {
-        display: none;
+    .navbar ul {
+        flex-direction: column-reverse !important;
+        text-align: right !important;
+    }
+    .navbar {
+        padding: 0 0 !important;
     }
     .logo {
         width: 100px !important; 

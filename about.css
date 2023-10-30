@@ -433,8 +433,12 @@ footer {
     section p {
         font-size: 2vh;
     }
-    .navbar li {
-        display: none;
+    .navbar ul {
+        flex-direction: column-reverse !important;
+        text-align: right !important;
+    }
+    .navbar {
+        padding: 0 0 !important;
     }
     main {
         margin-left: 25px;
