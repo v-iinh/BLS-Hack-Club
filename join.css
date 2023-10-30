@@ -189,19 +189,19 @@ footer {
     background-color: #17171d; 
     color: #a633d6; 
     padding: 20px 0; 
-    text-align: left;
 }
 
 .footer-container {
     max-width: 1200px; 
     margin: 0 auto;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-around;
 }
 
 .footer-section {
     flex: 1; 
     padding: 0 20px; 
+    text-align: center;
 }
 
 .footer-section h3 {

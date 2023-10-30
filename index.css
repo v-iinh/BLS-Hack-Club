@@ -160,12 +160,13 @@ footer {
     max-width: 1200px; 
     margin: 0 auto;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-around;
 }
 
 .footer-section {
     flex: 1; 
     padding: 0 20px; 
+    text-align: center;
 }
 
 .footer-section h3 {
