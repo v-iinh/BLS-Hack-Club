@@ -244,8 +244,12 @@ footer {
         font-size: 2vh !important;
         text-align: left !important;
     }
-    .navbar li {
-        display: none !important;
+    .navbar ul {
+        flex-direction: column-reverse !important;
+        text-align: right !important;
+    }
+    .navbar {
+        padding: 0 0 !important;
     }
     main {
         margin-left: 25px !important;
