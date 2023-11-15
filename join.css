@@ -6,6 +6,13 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+html::-webkit-scrollbar {
+    display: none;
+}
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 .banner
 {
     position: relative;
@@ -126,7 +133,7 @@ body
 }
 
 .logo {
-    position: absolute;
+    position: fixed;
     top: -6px; 
     left: 0px;
     width: 150px; 
@@ -139,7 +146,7 @@ body {
     text-align: center;
 }
 
-body {
+main {
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 175px; 
@@ -176,4 +183,90 @@ button:hover {
 @keyframes wave-flag {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(-5deg); }
+}
+
+footer {
+    background-color: #17171d; 
+    color: #a633d6; 
+    padding: 20px 0; 
+}
+
+.footer-container {
+    max-width: 1200px; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1; 
+    padding: 0 20px; 
+    text-align: center;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #ec3750;
+}
+
+@media (max-width: 1250px) {
+    .mobile-card {
+        grid-template-columns: 1fr !important;
+    }
+    .card {
+        padding: var(--spacing-3) !important;
+    }
+    label {
+        line-height: var(--line-height-caption);
+        font-size: var(--font-3);
+    }
+}
+
+@media (max-width: 800px) {
+    section p {
+        font-size: 2vh !important;
+        text-align: left !important;
+    }
+    .navbar ul {
+        flex-direction: column-reverse !important;
+        text-align: right !important;
+    }
+    .navbar {
+        padding: 0 0 !important;
+    }
+    main {
+        margin-left: 25px !important;
+        margin-right: 25px !important;
+        margin-top: 175px !important; 
+    }
+    .mobile-card {
+        grid-template-columns: 1fr !important;
+    }
+    .card {
+        padding: var(--spacing-3) !important;
+    }
+    label {
+        line-height: var(--line-height-subheading);
+        font-size: var(--font-2);
+    }
+    .logo {
+        width: 100px !important; 
+    }
 }

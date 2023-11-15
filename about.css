@@ -6,6 +6,15 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+html::-webkit-scrollbar {
+    display: none;
+}
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 .banner
 {
     position: relative;
@@ -139,7 +148,7 @@ body {
     text-align: center;
 }
 
-body {
+main {
     margin-left: 100px;
     margin-right: 100px;
     margin-top: 175px; 
@@ -356,4 +365,100 @@ p {
     font-weight: 400;
     font-size: 14px;
     font-style: italic;
+}
+
+footer {
+    background-color: #17171d; 
+    color: #a633d6; 
+    padding: 20px 0; 
+}
+
+.footer-container {
+    max-width: 1200px; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1; 
+    padding: 0 20px; 
+    text-align: center;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    color: #ec3750;
+}
+
+@media (max-width: 1350px) {
+    .mobile-card {
+        grid-template-columns: 1fr !important;
+    }
+    .card img {
+        margin: 0 auto !important;
+        display: block !important;
+        height: 200px !important;
+        width: 200px !important;
+        border-radius: 50% !important;
+    }
+    section img {
+        display: block !important;
+        height: 400px !important;
+        width: 450px !important;
+        float: none !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+}
+
+@media (max-width: 800px) {
+    section p {
+        font-size: 2vh;
+    }
+    .navbar ul {
+        flex-direction: column-reverse !important;
+        text-align: right !important;
+    }
+    .navbar {
+        padding: 0 0 !important;
+    }
+    main {
+        margin-left: 25px;
+        margin-right: 25px;
+        margin-top: 175px; 
+    }
+    .logo {
+        width: 100px !important; 
+    }
+    .accordion {
+        font-size: 1.5em !important;
+    }
+    .panel p {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 550px) {
+    section img {
+        height: 275px !important;
+        width: 325px !important;
+    }
 }
