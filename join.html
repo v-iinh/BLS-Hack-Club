@@ -44,41 +44,61 @@
         
     </section> <br>
     
-    <section>
-        <form method="post" action="https://script.google.com/macros/s/AKfycbyzpBcArx4G03pfAT6vlsWuIipM3TpBCMTIaUbSi4QScEfxTVT8EqTB1pD2etmwjw3YzA/exec">
-          <div class="card sunken" style="background: #2b2a2f;" data-dashlane-rid="90fa186659f851f5" data-form-type="other">
-            <div style="
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: var(--spacing-3);
-              ">
-              <label data-dashlane-label="true" style="color: white;">
-                Full Name
-                <input style="background: #252429; color: white;" placeholder="John Doe" data-dashlane-rid="41d3769a3d107ce9" data-kwimpalastatus="alive" data-kwimpalaid="1696902461334-0" data-form-type="name" name="Name" type="text">
-              </label>
-              <label data-dashlane-label="true" style="color: white;">
-                Year of Graduation
-                <input style="background: #252429; color: white;" placeholder="2025" data-dashlane-rid="41d3769a3d107ce9" data-kwimpalastatus="alive" data-kwimpalaid="1696902461334-0" data-form-type="yog" name="YOG" type="number">
-              </label>
-              <label data-dashlane-label="true" style="color: white;">
-                Email
-                <input style="background: #252429; color: white;" placeholder="sample@email.com" data-dashlane-rid="41d3769a3d107ce9" data-kwimpalastatus="alive" data-kwimpalaid="1696902461334-0" data-form-type="email" name="Email" type="text">
-              </label>
-              <label data-dashlane-label="true" style="color: white;">
-                Experience with Coding
-                <input style="background: #252429; color: white;" placeholder="I have a little bit of experience in..." data-dashlane-rid="41d3769a3d107ce9" data-kwimpalastatus="alive" data-kwimpalaid="1696902461334-0" data-form-type="experience" name="Experience" type="text">
-              </label>
-            </div>
-            <script>
-              function redirect() {
-                window.location.replace("index.html");
-                alert("Form submitted! Thanks for your interest!!!");
-                return false;
-              }
-            </script>
-            <button style="margin-top: var(--spacing-3); width: 100%; background: #a633d6; color: white;" data-dashlane-rid="64b68ed8b998baec" data-dashlane-label="true" data-form-type="other" onclick="return redirect()">
-              Submit
-            </button>
+    <!-- PLEASE DON'T TOUCH ANYTHING ITS GONNA BREAK I SWEAR TO GOD -->
+    <section> <!-- This section tag doesn't even have a closing tag LOL -->
+        <form id="surveyForm"
+          method="POST" 
+          action="https://script.google.com/macros/s/AKfycbwj8p4bS-RqnvSX5iPlah7mby6bENg_e7yVS-XBT6aheq4EJ5UVM7zzX2OUuRoN2aGyvQ/exec"
+        >
+          <div class="card sunken" style="
+            display: grid;
+            background: #2b2a2f;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-3);
+          ">
+            <h1 style="grid-column: 1 / 3; color: white;">Join!</h1>
+
+            <label style="color: white;">
+              Email
+              <input name="Email" type="email" placeholder="jdoe7@bostonk12.org" required>
+            </label>
+            
+            <label style="color: white;">
+              Name
+              <input name="Name" type="text" placeholder="John Doe" required>
+            </label>
+
+            <label style="color: white;">
+              Year of Graduation
+              <input name="YOG" type="number" placeholder="2025" required>
+            </label>
+
+            <label style="color: white;">
+              Experience with programming
+              <input name="Experience" type="text" placeholder="I have experience in..." required>
+            </label>
+            
+            <button style="grid-column: 1 / 3; margin-top: var(--spacing-3); width: 100%; background: #a633d6; color: white;" type="submit">Send</button>
+          </div>
+
+        </form>
+        <script type="text/javascript">
+          window.addEventListener("DOMContentLoaded", function() {
+            const yourForm = document.getElementById('surveyForm');
+            yourForm.addEventListener("submit", function(e) {
+              e.preventDefault();
+              const data = new FormData(yourForm);
+              const action = e.target.action;
+              fetch(action, { method: 'POST', body: data, }) .then(() => {
+                alert("Form Submitted, thank you for your interest!"); 
+                window.location.replace('https://bls.hackclub.com/');
+              })
+            })
+          });
+        </script>
+
+<!-- TODO: FIX THE FORMATTING  -->
+
           </div>
           <div class="footer-section">
               <h3>contacts</h3>
