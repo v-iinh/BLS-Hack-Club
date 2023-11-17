@@ -162,6 +162,13 @@ header h1 {
     color: #a633d6;
 }
 
+.card {
+    display: grid;
+    background: #2b2a2f;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-3);
+}
+
 p {
     color: #ffffff;
     line-height: 2; 
@@ -193,10 +200,12 @@ button:hover {
 footer {
     background-color: #17171d; 
     color: #a633d6; 
+    margin-top: 10vh;
     padding: 20px 0; 
 }
 
 .footer-container {
+    width: 100%;
     max-width: 1200px; 
     margin: 0 auto;
     display: flex;
@@ -268,10 +277,14 @@ footer {
         padding: var(--spacing-3) !important;
     }
     label {
+        padding-top: 2vh;
         line-height: var(--line-height-subheading);
         font-size: var(--font-2);
     }
     .logo {
         width: 100px !important; 
+    }
+    .card {
+        display: block;
     }
 }

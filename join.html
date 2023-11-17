@@ -27,96 +27,102 @@
           <br>
       </header>
 
-    <section>
-        <p style="text-align: center;">
-            Ready to be a part of something bigger than yourself? 
-            BLS Hack is your gateway to a world of endless possibilities in the tech sphere. 
-            Whether you're aiming for a career in tech or simply want to explore your curiosity, we welcome you with open arms. 
-            Getting started is easy! Just come to our next meeting or event, introduce yourself, and see what we're all about. 
-            No prior experience is necessary—just bring your passion, curiosity, and a desire to learn. 
-            Stay updated with our latest activities, projects, and events by signing up to our email list. 
-            Have questions or want to know more? <br>Reach out to us at blshackclub@gmail.com!
-            <br><br>
-            Don't miss your chance to be part of BLS Hack. 
-            Together, we'll unlock the doors to innovation, creativity, and endless opportunities in the world of technology. 
-            Join us today, and let's hack the future together!
-        </p>
-        
-    </section> <br>
+      <section>
+          <p style="text-align: center;">
+              Ready to be a part of something bigger than yourself? 
+              BLS Hack is your gateway to a world of endless possibilities in the tech sphere. 
+              Whether you're aiming for a career in tech or simply want to explore your curiosity, we welcome you with open arms. 
+              Getting started is easy! Just come to our next meeting or event, introduce yourself, and see what we're all about. 
+              No prior experience is necessary—just bring your passion, curiosity, and a desire to learn. 
+              Stay updated with our latest activities, projects, and events by signing up to our email list. 
+              Have questions or want to know more? <br>Reach out to us at blshackclub@gmail.com!
+              <br><br>
+              Don't miss your chance to be part of BLS Hack. 
+              Together, we'll unlock the doors to innovation, creativity, and endless opportunities in the world of technology. 
+              Join us today, and let's hack the future together!
+          </p>
+          
+      </section> <br>
     
-    <!-- PLEASE DON'T TOUCH ANYTHING ITS GONNA BREAK I SWEAR TO GOD -->
-    <section> <!-- This section tag doesn't even have a closing tag LOL -->
-        <form id="surveyForm"
-          method="POST" 
-          action="https://script.google.com/macros/s/AKfycbwj8p4bS-RqnvSX5iPlah7mby6bENg_e7yVS-XBT6aheq4EJ5UVM7zzX2OUuRoN2aGyvQ/exec"
-        >
-          <div class="card sunken" style="
-            display: grid;
-            background: #2b2a2f;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--spacing-3);
-          ">
-            <h1 style="grid-column: 1 / 3; color: white;">Join!</h1>
+      <!-- PLEASE DON'T TOUCH ANYTHING ITS GONNA BREAK I SWEAR TO GOD -->
+      <section> <!-- This section tag doesn't even have a closing tag LOL -->
+          <form id="surveyForm"
+            method="POST" 
+            action="https://script.google.com/macros/s/AKfycbwj8p4bS-RqnvSX5iPlah7mby6bENg_e7yVS-XBT6aheq4EJ5UVM7zzX2OUuRoN2aGyvQ/exec"
+          >
+            <div class="card">
+              <h1 style="grid-column: 1 / 3; color: white;">Join!</h1>
 
-            <label style="color: white;">
-              Email
-              <input name="Email" type="email" placeholder="jdoe7@bostonk12.org" required>
-            </label>
-            
-            <label style="color: white;">
-              Name
-              <input name="Name" type="text" placeholder="John Doe" required>
-            </label>
+              <label style="color: white;">
+                Email
+                <input name="Email" type="email" placeholder="jdoe7@bostonk12.org" required>
+              </label>
+              
+              <label style="color: white;">
+                Name
+                <input name="Name" type="text" placeholder="John Doe" required>
+              </label>
 
-            <label style="color: white;">
-              Year of Graduation
-              <input name="YOG" type="number" placeholder="2025" required>
-            </label>
+              <label style="color: white;">
+                Year of Graduation
+                <input name="YOG" type="number" placeholder="2025" required>
+              </label>
 
-            <label style="color: white;">
-              Experience with programming
-              <input name="Experience" type="text" placeholder="I have experience in..." required>
-            </label>
-            
-            <button style="grid-column: 1 / 3; margin-top: var(--spacing-3); width: 100%; background: #a633d6; color: white;" type="submit">Send</button>
-          </div>
+              <label style="color: white;">
+                Experience with programming
+                <input name="Experience" type="text" placeholder="I have experience in..." required>
+              </label>
+              
+              <button style="grid-column: 1 / 3; margin-top: var(--spacing-3); width: 100%; background: #a633d6; color: white;" type="submit">Send</button>
+            </div>
 
-        </form>
-        <script type="text/javascript">
-          window.addEventListener("DOMContentLoaded", function() {
-            const yourForm = document.getElementById('surveyForm');
-            yourForm.addEventListener("submit", function(e) {
-              e.preventDefault();
-              const data = new FormData(yourForm);
-              const action = e.target.action;
-              fetch(action, { method: 'POST', body: data, }) .then(() => {
-                alert("Form Submitted, thank you for your interest!"); 
-                window.location.replace('https://bls.hackclub.com/');
+          </form>
+          <script type="text/javascript">
+            window.addEventListener("DOMContentLoaded", function() {
+              const yourForm = document.getElementById('surveyForm');
+              yourForm.addEventListener("submit", function(e) {
+                e.preventDefault();
+                const data = new FormData(yourForm);
+                const action = e.target.action;
+                fetch(action, { method: 'POST', body: data, }) .then(() => {
+                  alert("Form Submitted, thank you for your interest!"); 
+                  window.location.replace('https://bls.hackclub.com/');
+                })
               })
-            })
-          });
-        </script>
+            });
+          </script>
+      </main>
 
-<!-- TODO: FIX THE FORMATTING  -->
+  <!-- TODO: FIX THE FORMATTING  -->
 
-          </div>
-          <div class="footer-section">
-              <h3>contacts</h3>
-              <ul>
-                  <li><a href="https://www.instagram.com/blshackclub/" target="_blank">instagram</a></li>
-                  <li><a href="mailto:blshackclub@gmail.com" target="_blank">email</a></li>
-                  <li><a href="./join.html">join</a></li>
-              </ul>
-          </div>
-          <div class="footer-section">
-              <h3>other</h3>
-              <ul>
-                  <li><a href="https://bls.org/" target="_blank">bls</a></li>
-                  <li><a href="https://hackclub.com/slack" target="_blank">slack</a></li>
-                  <li><a href="https://discord.gg/UtF3qQzRSe" target="_blank">discord</a></li>
-              </ul>
-          </div>
-      </div>
+  <footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>hackclub</h3>
+            <ul>
+                <li><a href="https://hackclub.com/philosophy/" target="_blank">philosophy</a></li>
+                <li><a href="https://events.hackclub.com/" target="_blank">events</a></li>
+                <li><a href="https://hackathons.hackclub.com/" target="_blank">hackathons</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>contacts</h3>
+            <ul>
+                <li><a href="https://www.instagram.com/blshackclub/" target="_blank">instagram</a></li>
+                <li><a href="mailto:blshackclub@gmail.com" target="_blank">email</a></li>
+                <li><a href="join">join</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>other</h3>
+            <ul>
+                <li><a href="https://bls.org/" target="_blank">bls</a></li>
+                <li><a href="https://hackclub.com/slack" target="_blank">slack</a></li>
+                <li><a href="https://discord.gg/UtF3qQzRSe" target="_blank">discord</a></li>
+            </ul>
+        </div>
+    </div>
   </footer>
+
 </body>
 </html>
