@@ -145,6 +145,23 @@ body
     cursor: pointer;
 }
 
+#redirect-button {
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    top: 0; 
+    bottom: 0; 
+    margin-top: auto; 
+    margin-bottom: auto; 
+    width: 80vh;
+    height: 20vh;
+    z-index: 999;
+    background: transparent;
+    border: none !important;
+}
+
 @keyframes wave-flag {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(-5deg); }
