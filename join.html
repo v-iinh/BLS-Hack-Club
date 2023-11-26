@@ -82,11 +82,11 @@
           window.addEventListener("DOMContentLoaded", function() {
             const yourForm = document.getElementById('surveyForm');
             yourForm.addEventListener("submit", function(e) {
+              alert("Form Submitted, thank you for your interest!"); 
               e.preventDefault();
               const data = new FormData(yourForm);
               const action = e.target.action;
               fetch(action, { method: 'POST', body: data, }) .then(() => {
-                alert("Form Submitted, thank you for your interest!"); 
                 window.location.replace('https://bls.hackclub.com/');
               })
             })
