@@ -246,6 +246,7 @@ footer {
     }
     .card {
         padding: var(--spacing-3) !important;
+        display: block;
     }
     label {
         line-height: var(--line-height-caption);
@@ -283,8 +284,5 @@ footer {
     }
     .logo {
         width: 100px !important; 
-    }
-    .card {
-        display: block;
     }
 }

@@ -43,7 +43,10 @@
           </p>
           
       </section> <br>
-    
+      <section id="loadingMessage" style="display: none;">
+        <p style="text-align: center; font-size: 10vh; font-weight: 800;" >LOADING...</p>
+        <p style="text-align: center; font-size: 3vh; font-style: italic;">please do not close</p>
+      </section>
       <!-- PLEASE DON'T TOUCH ANYTHING ITS GONNA BREAK I SWEAR TO GOD -->
       <section> <!-- This section tag doesn't even have a closing tag LOL -->
           <form id="surveyForm"
@@ -81,17 +84,31 @@
         <script type="text/javascript">
           window.addEventListener("DOMContentLoaded", function() {
             const yourForm = document.getElementById('surveyForm');
-            yourForm.addEventListener("submit", function(e) {
-              alert("Form Submitted, thank you for your interest!"); 
+            const loadingMessage = document.getElementById('loadingMessage');
+
+            yourForm.addEventListener("submit", async function(e) {
               e.preventDefault();
               const data = new FormData(yourForm);
               const action = e.target.action;
-              fetch(action, { method: 'POST', body: data, }) .then(() => {
+              loadingMessage.style.display = "block";
+              yourForm.style.display = "none";
+
+              const fetchPromise = fetch(action, { method: 'POST', body: data });
+
+              try {
+                await fetchPromise;
+                alert("Form Submitted, thank you for your interest!");
                 window.location.replace('https://bls.hackclub.com/');
-              })
-            })
+              } catch (error) {
+                console.error('Error submitting form:', error);
+                alert("Form NOT submitted, please submit again.");
+              } finally {
+                loadingMessage.style.display = "none";
+                yourForm.style.display = "block";
+              }
+            });
           });
-        </script>
+        </script>          
       </section>
     </main>
 
