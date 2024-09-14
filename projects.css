@@ -410,7 +410,14 @@ footer {
     color: #ec3750;
 }
 
+video {
+    width: 1100px;
+}
+
 @media (max-width: 1350px) {
+    video {
+        width: 575px;
+    }
     .mobile-card {
         grid-template-columns: 1fr !important;
     }
@@ -432,6 +439,9 @@ footer {
 }
 
 @media (max-width: 800px) {
+    video {
+        width: 450px;
+    }
     section p {
         font-size: 2vh;
     }
@@ -459,6 +469,9 @@ footer {
 }
 
 @media (max-width: 550px) {
+    video {
+        width: 400px;
+    }
     section img {
         height: 275px !important;
         width: 325px !important;
