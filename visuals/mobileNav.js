@@ -4,9 +4,9 @@ const bars = document.getElementsByClassName('nav_mobile')[0];
 
 bars.addEventListener('click', function(){
     if(toggleDisplay % 2 === 0){
-        menu.style.display = "flex";
+        menu.style.maxHeight = "180px";
     } else {
-        menu.style.display = "none";
+        menu.style.maxHeight = "0px";
     }
     toggleDisplay++;
 });

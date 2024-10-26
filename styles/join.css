@@ -136,6 +136,9 @@ body {
 .mobile_expand {
 	justify-content: center;
 	height: 180px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.25s linear;
 }
 
 .mobile_expand li:not(:last-child) {

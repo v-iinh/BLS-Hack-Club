@@ -106,6 +106,7 @@ body {
 .navbar li,
 .mobile_expand li {
 	margin: 0 20px;
+	text-align: center;
 }
 
 .navbar a,
@@ -136,6 +137,9 @@ body {
 .mobile_expand {
 	justify-content: center;
 	height: 180px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.25s linear;
 }
 
 .mobile_expand li:not(:last-child) {
