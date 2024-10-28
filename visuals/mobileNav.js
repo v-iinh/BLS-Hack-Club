@@ -29,6 +29,9 @@ function checkWidthAndRefresh() {
     if (isAbove1350 !== wasAbove1350) {
         menu.style.maxHeight = "0px";
         document.body.style.overflow = ''; // Re-enable scroll 
+        bars.style.color = "#FFF";
+        bars.firstElementChild.classList.add("fa-bars");
+        bars.firstElementChild.classList.remove("fa-x");
         toggleDisplay = 0;
     }
 
