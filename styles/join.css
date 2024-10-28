@@ -264,28 +264,7 @@ footer {
 	color: #ec3750;
 }
 
-@media (max-width: 1250px) {
-	.mobile-card {
-		grid-template-columns: 1fr !important;
-	}
-
-	.card {
-		padding: var(--spacing-3) !important;
-		display: block;
-	}
-
-	label {
-		line-height: var(--line-height-caption);
-		font-size: var(--font-3);
-	}
-}
-
-@media (max-width: 800px) {
-	section p {
-		font-size: 2vh !important;
-		text-align: left !important;
-	}
-
+@media (max-width: 1350px) {
 	.navbar ul {
 		display: none;
 	}
@@ -307,6 +286,29 @@ footer {
 	.navbar {
 		padding: 0 0 !important;
 		background-color: #252429 !important;
+	}
+}
+
+@media (max-width: 1250px) {
+	.mobile-card {
+		grid-template-columns: 1fr !important;
+	}
+
+	.card {
+		padding: var(--spacing-3) !important;
+		display: block;
+	}
+
+	label {
+		line-height: var(--line-height-caption);
+		font-size: var(--font-3);
+	}
+}
+
+@media (max-width: 800px) {
+	section p {
+		font-size: 2vh !important;
+		text-align: left !important;
 	}
 
 	main {

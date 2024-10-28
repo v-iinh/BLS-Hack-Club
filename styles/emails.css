@@ -453,12 +453,6 @@ footer {
 		margin-left: auto !important;
 		margin-right: auto !important;
 	}
-}
-
-@media (max-width: 800px) {
-	section p {
-		font-size: 2vh;
-	}
 
 	.navbar ul {
 		display: none;
@@ -481,6 +475,12 @@ footer {
 	.navbar {
 		padding: 0 0 !important;
 		background-color: #252429 !important;
+	}
+}
+
+@media (max-width: 800px) {
+	section p {
+		font-size: 2vh;
 	}
 
 	main {

@@ -241,17 +241,7 @@ footer {
 	display: none;
 }
 
-@media (max-width: 1000px) {
-	.container #scene #text {
-		font-size: 12vh;
-	}
-}
-
-@media (max-width: 800px) {
-	.container #scene #text {
-		font-size: 8vh;
-	}
-
+@media (max-width: 1350px) {
 	.navbar ul {
 		display: none;
 	}
@@ -273,6 +263,18 @@ footer {
 	.navbar {
 		padding: 0 0 !important;
 		background-color: #252429 !important;
+	}
+}
+
+@media (max-width: 1000px) {
+	.container #scene #text {
+		font-size: 12vh;
+	}
+}
+
+@media (max-width: 800px) {
+	.container #scene #text {
+		font-size: 8vh;
 	}
 
 	.logo {
