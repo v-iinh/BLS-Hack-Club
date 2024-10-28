@@ -354,7 +354,6 @@ p {
 	border-radius: var(--radii-extra);
 	box-shadow: var(--shadow-card);
 	overflow: hidden;
-	padding: var(--spacing-3)
 }
 
 .card img {
@@ -367,26 +366,28 @@ p {
 }
 
 .card h1 {
-	float: left;
-	margin-left: 20px;
 	margin-top: 7.5px;
 	display: block;
 }
 
-.card p {
-	color: #ec3750;
-	float: left;
-	display: block;
-	margin-left: 20px;
-	font-weight: 700;
-	font-size: 18px;
+.card a {
+	padding: var(--spacing-3);
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.card a:hover {
+	cursor: pointer;
 }
 
 .card p span {
+	display: block;
 	color: gray;
 	font-weight: 400;
 	font-size: 14px;
 	font-style: italic;
+	text-align: center;
 }
 
 footer {
@@ -431,15 +432,7 @@ footer {
 	color: #ec3750;
 }
 
-.panel video {
-	width: 1000px;
-}
-
 @media (max-width: 1350px) {
-	.panel video {
-		width: 800px;
-	}
-
 	.mobile-card {
 		grid-template-columns: 1fr !important;
 	}
@@ -485,18 +478,7 @@ footer {
 	}
 }
 
-@media (max-width: 1050px) {
-	.panel video {
-		width: 550px;
-	}
-}
-
-
 @media (max-width: 800px) {
-	.panel video {
-		width: 475px;
-	}
-
 	section p {
 		font-size: 2vh;
 	}
@@ -521,10 +503,6 @@ footer {
 }
 
 @media (max-width: 550px) {
-	.panel video {
-		width: 300px;
-	}
-
 	section img {
 		height: 275px !important;
 		width: 325px !important;
