@@ -178,7 +178,7 @@ body {
 	margin-bottom: auto;
 	width: 80vh;
 	height: 20vh;
-	z-index: 999;
+	z-index: 1;
 	background: transparent;
 	border: none !important;
 }
