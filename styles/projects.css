@@ -431,7 +431,15 @@ footer {
 	color: #ec3750;
 }
 
+.panel video {
+	width: 1000px;
+}
+
 @media (max-width: 1350px) {
+	.panel video {
+		width: 800px;
+	}
+
 	.mobile-card {
 		grid-template-columns: 1fr !important;
 	}
@@ -477,7 +485,18 @@ footer {
 	}
 }
 
+@media (max-width: 1050px) {
+	.panel video {
+		width: 550px;
+	}
+}
+
+
 @media (max-width: 800px) {
+	.panel video {
+		width: 475px;
+	}
+
 	section p {
 		font-size: 2vh;
 	}
@@ -502,6 +521,10 @@ footer {
 }
 
 @media (max-width: 550px) {
+	.panel video {
+		width: 300px;
+	}
+
 	section img {
 		height: 275px !important;
 		width: 325px !important;
