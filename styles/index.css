@@ -264,6 +264,10 @@ footer {
 		padding: 0 0 !important;
 		background-color: #252429 !important;
 	}
+
+	.vd {
+		display: none;
+	}
 }
 
 @media (max-width: 1000px) {
